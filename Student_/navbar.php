@@ -71,13 +71,15 @@
 
       </div>
     </nav>
+
+
     <?php
       if(isset($_SESSION['login_user']))
       {
         $day=0;
-
         $exp='<p style="color:yellow; background-color:red;">EXPIRED</p>';
-        $res= mysqli_query($db,"SELECT * FROM `issue_book` where username ='$_SESSION[login_user]' and approve ='$exp' ;");
+
+        $res= mysqli_query($db, "SELECT * FROM `issue_book` where username ='$_SESSION[login_user]' and approve ='$exp' ;");
       
       while($row=mysqli_fetch_assoc($res))
       {

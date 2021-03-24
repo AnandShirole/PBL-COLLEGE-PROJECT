@@ -20,6 +20,11 @@
 		body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
+  background-image: linear-gradient(to bottom right,rgb(0,0,0,0.7),rgb(0,0,0,0.7)) , url("images/books.jpg");
+  background-repeat: no-repeat;
+    			background-size: cover;
+    		background-position: center;
+			height:110vh;
 }
 
 .sidenav {
@@ -34,6 +39,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  color:white;
 }
 
 .sidenav a {
@@ -109,7 +115,7 @@
 
 <div id="main">
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776; open</span>
 
 
 <script>
@@ -147,7 +153,7 @@ function closeNav() {
 	</div>
 
 
-	<h2>List Of Books</h2>
+	<h2 style = "color:white">List Of Books</h2>
 	<?php
 
 		if(isset($_POST['submit']))

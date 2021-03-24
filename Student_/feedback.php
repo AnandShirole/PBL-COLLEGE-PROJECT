@@ -17,7 +17,7 @@
     <style type="text/css">
     	body
     	{
-			background-image:linear-gradient(to bottom right,rgb(0,0,0,0.6),rgb(0,0,0,0.6)) , url("images/feed.jpg");
+			background-image:linear-gradient(to bottom right,rgb(0,0,0,0.7),rgb(0,0,0,0.7)) , url("images/feed.jpg");
     		background-repeat: no-repeat;
     			background-size: cover;
     		background-position: center;
@@ -30,7 +30,7 @@
     		width:900px;
     		height: 600px;
     		background-color: black;
-    		opacity: .9;
+    		opacity: .6;
     		color: white;
     	}
     	.form-control

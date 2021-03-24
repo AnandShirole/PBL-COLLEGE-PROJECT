@@ -10,30 +10,40 @@
 	<style type="text/css">
 		body
 		{
-			height: 650px;
-			background-image: url("images/7.jpg");
-			background-repeat: no-repeat;
+			background-image: linear-gradient(to bottom right,rgb(0,0,0,0.6),rgb(0,0,0,0.6)) ,url("images/e.jpg");
+    		background-repeat: no-repeat;
+    			background-size: cover;
+    		background-position: center;
+			height:110vh;
 		}
 		.wrapper
 		{
-			width: 400px;
-			height: 400px;
-			margin:100px auto;
-			background-color: black;
-			opacity: .8;
-			color: white;
-			padding: 27px 15px;
+			
+			height:380px;
+    width:380px;
+    background-color:white;
+    margin-left:38%;
+    color:black;
+    padding:0px;
+    position:absolute;
+    margin-top:5%;
+    overflow: hidden;
+    border-radius: 20px;
+	font-size: 20px;
+	
 		}
 		.form-control
 		{
 			width: 300px;
 		}
+
+		
 	</style>
 </head>
 <body>
 	<div class="wrapper">
 		<div style="text-align: center;">
-			<h1 style="text-align: center; font-size: 35px;font-family: Lucida Console;">Change Your Password</h1>
+			<h1 style="text-align: center; font-size: 35px;font-family: times new roman;">Change Your Password</h1>
 		</div>
 		<div style="padding-left: 30px; ">
 		<form action="" method="post" >
