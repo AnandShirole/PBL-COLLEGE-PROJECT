@@ -1,0 +1,252 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+body {
+line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+display:block;
+}
+
+nav ul {
+list-style:none;
+}
+
+blockquote, q {
+quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+
+a {
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+background-color:#ff9;
+color:#000; 
+font-style:italic;
+font-weight:bold;
+}
+
+del {
+text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+border-bottom:1px dotted;
+cursor:help;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+display:block;
+height:1px;
+border:0; 
+border-top:1px solid #cccccc;
+margin:1em 0;
+padding:0;
+}
+
+input, select {
+vertical-align:middle;
+}
+
+/*-------------------------------Main code   INDEX ---------------------------------------------------------*/
+
+.wrapper
+{
+	height: 660px;
+	width: 100%;
+	/*background-color: red;*/
+}
+header
+{
+	height: 130px;
+	width: 100%;
+	background-color: black;
+	padding: 10px;
+}
+section
+{
+	height: 550px;
+
+	width: 100%;
+	background-color: grey;
+}
+footer
+{
+	
+	clear: both;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	font-family: arial, helvetica;
+	font-weight: bold ;
+	font-size: 15px;
+	background-color:transparent;
+}
+.logo
+{
+	float :left;
+	padding-left: 20px;
+
+}
+.logo img 
+{
+	padding-left: 80px;
+}
+
+li a
+{
+	color: white;
+	text-decoration: none;
+}
+/*nav
+{
+	float: right;
+	word-spacing: 30px;
+	padding: 20px;
+}
+nav li 
+{
+	display: inline-block;
+	line-height: 80px;
+}*/
+
+
+section .sect_img
+{
+	height: 540px;
+	margin-top: 0px;
+	background-image:linear-gradient(to bottom right,rgb(0,0,0,0.4),rgb(0,0,0,0.4)) ,url("images/li.jpg");
+	background-repeat: no-repeat;
+	width:100%;
+	background-size:cover;                     
+    background-position:center; 
+}
+.box
+{
+	height:100px;
+	width: 400px;
+	background-color: #030002;
+	margin: 70px auto;
+	opacity: .6;
+	color: white;
+	background: transparent;
+}
+
+/*--------------------------------st_login-----------------------------*/
+
+.log_img
+{
+	height: 650px;
+	margin-top: 0px;
+	background-image:linear-gradient(to bottom right,rgb(0,0,0,0.6),rgb(0,0,0,0.6)) , url("images/st.jfif");
+	background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    height: 100vh;
+}
+.box1
+{
+	height:450px;
+    width:380px;
+    background-color:white;
+    margin-left:38%;
+    color:black;
+    padding:0px;
+    position:absolute;
+    margin-top:5%;
+    overflow: hidden;
+    border-radius: 20px;
+	font-size: 20px;
+}
+
+.input-field{
+    width: 80%;
+    padding: 10px 0px;
+    margin: 5px 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    color:black;
+    font-size: 15px; 
+}
+form .login
+{
+	margin: auto 50px;
+}
+input
+{
+	height: 25px;
+	width: 300px;
+
+}
+/*------------------------------registration--------------------*/
+.reg_img
+{
+	height: 110vh;
+	margin-top: 0px;
+	background-image:linear-gradient(to bottom right,rgb(0,0,0,0.6),rgb(0,0,0,0.6)) , url("images/reg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box2
+{
+	height: 650px;
+	width: 450px;
+	background-color:white;
+    margin-left:38%;
+    color:black;
+    padding:0px;
+    position:absolute;
+    margin-top:5%;
+    overflow: hidden;
+    border-radius: 20px;
+	font-size: 20px;
+}
