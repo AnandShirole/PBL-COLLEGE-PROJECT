@@ -17,7 +17,7 @@
     <style type="text/css">
     	body
     	{
-			background-image:linear-gradient(to bottom right,rgb(0,0,0,0.7),rgb(0,0,0,0.7)) , url("images/feed.jpg");
+			background-image: url("images/feed.jpg");
     		background-repeat: no-repeat;
     			background-size: cover;
     		background-position: center;
@@ -25,23 +25,26 @@
     	}
     	.wrapper
     	{
-    		padding: 10px;
-    		margin: -20px auto;
-    		width:900px;
+    		padding: 70px;
+    		margin-top: 90px ;
+			margin-left:25%;
+    		width:800px;
     		height: 600px;
     		background-color: black;
-    		opacity: .6;
+    		opacity: .9;
     		color: white;
+			padding-top:40px;
     	}
     	.form-control
     	{
     		height: 70px;
     		width: 60%;
+			padding:20px;
     	}
     	.scroll
     	{
     		width: 100%;
-    		height: 300px;
+    		height: 250px;
     		overflow: auto;
     	}
 

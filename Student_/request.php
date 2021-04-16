@@ -16,8 +16,14 @@
 		}
 		
 		body {
-  font-family: "Lato", sans-serif;
+  font-family: "times new roman";
   transition: background-color .5s;
+  background-image:url("images/request.jpg");
+  background-repeat: no-repeat;
+    			background-size: cover;
+    		background-position: center;
+			height:110vh;
+			width:100%;
 }
 
 .sidenav {
@@ -102,7 +108,6 @@
   <div class="h"> <a href="books.php">Books</a></div>
   <div class="h"> <a href="request.php">Book Request</a></div>
   <div class="h"> <a href="issue_info.php">Issue Information</a></div>
-  <div class="h"><a href="expired.php">Expired List</a></div>
 
 </div>
 <div id="main">
@@ -133,12 +138,18 @@
 
 			if(mysqli_num_rows($q)==0)
 			{
-				echo "There's no pending request";
+				
+				
+				echo ' <span style="font-size:1.2;color:#0e3c68;font-weight:bold;">"There is no pending request"</span></div>';
+
+				
+			
 			}
+
 			else
 			{
 		echo "<table class='table table-bordered table-hover' >";
-			echo "<tr style='background-color: #6db6b9e6;'>";
+			echo "<tr style='background-color: 	#00ffcc; font-size:15px'>";
 				//Table header
 				
 				echo "<th>"; echo "Book-ID";  echo "</th>";
@@ -150,6 +161,7 @@
 
 			while($row=mysqli_fetch_assoc($q))
 			{
+				echo "<tr style='background-color: 	#00ffcc; font-size:20px'>";
 				echo "<tr>";
 				echo "<td>"; echo $row['bid']; echo "</td>";
 				echo "<td>"; echo $row['approve']; echo "</td>";

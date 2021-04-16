@@ -22,6 +22,16 @@
 		}
 
 	</style>
+
+<style>
+body {
+  background-image:url('images/edit.jpg');
+  background-repeat: no-repeat;
+    			background-size: cover;
+    		background-position: center;
+}
+</style>
+
 </head>
 <body style="background-color: #004528;">
 

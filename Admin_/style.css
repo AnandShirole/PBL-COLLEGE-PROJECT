@@ -177,7 +177,7 @@ section .sect_img
 	background: transparent;
 }
 
-/*--------------------------------st_login-----------------------------*/
+/*--------------------------------admin_login-----------------------------*/
 
 .log_img
 {
@@ -214,7 +214,7 @@ section .sect_img
     border-bottom: 1px solid black;
     outline: none;
     color:black;
-    font-size: 15px; 
+    font-size: 30px; 
 }
 form .login
 {
@@ -222,7 +222,7 @@ form .login
 }
 input
 {
-	height: 25px;
+	height: 30px;
 	width: 300px;
 
 }
@@ -238,10 +238,10 @@ input
 }
 .box2
 {
-	height: 650px;
+	height: 580px;
 	width: 450px;
 	background-color:white;
-    margin-left:38%;
+    margin-left:36%;
     color:black;
     padding:0px;
     position:absolute;
@@ -250,3 +250,4 @@ input
     border-radius: 20px;
 	font-size: 20px;
 }
+

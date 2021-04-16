@@ -163,7 +163,7 @@ section .sec_img
 {
 	height: 540px;
 	margin-top: 0px;
-	background-image:linear-gradient(to bottom right,rgb(0,0,0,0.4),rgb(0,0,0,0.4)) ,url("images/1.jpg");
+	background-image:url("images/1.jpg");
 	background-repeat: no-repeat;
 	width:100%;
 	background-size:cover;                     

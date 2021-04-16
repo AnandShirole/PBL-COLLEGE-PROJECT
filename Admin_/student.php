@@ -13,8 +13,15 @@
 			padding-left: 850px;
 		}
 		body {
-  font-family: "Lato", sans-serif;
+  font-family: "times new roman";
   transition: background-color .5s;
+ /* background-color:#a64dff;*/
+ background-image:url("images/info.jpg");
+ background-repeat: no-repeat;
+    			background-size: cover;
+    		background-position: center;
+			width:100%;
+			height:110vh;
 }
 
 .sidenav {
@@ -25,7 +32,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #222;
+  background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -35,13 +42,13 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: yellow;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .sidenav .closebtn {
@@ -70,7 +77,7 @@
 	color:white;
 	width: 300px;
 	height: 50px;
-	background-color: #00544c;
+	background-color: white;
 }
 
 	</style>
@@ -104,20 +111,20 @@
 
 <div id="main">
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:40px;cursor:pointer; color:white" onclick="openNav()">&#9776; open</span>
 
 
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
   document.getElementById("main").style.marginLeft = "300px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.body.style.backgroundColor = "	rgb(255, 255, 255)";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "#a64dff";
 }
 </script>
 
@@ -179,7 +186,7 @@ function closeNav() {
 			$res=mysqli_query($db,"SELECT first,last,username,roll,email,contact FROM `student`;");
 
 		echo "<table class='table table-bordered table-hover' >";
-			echo "<tr style='background-color: #6db6b9e6;'>";
+			echo "<tr style='background-color: #0066ff;'>";
 				//Table header
 				echo "<th>"; echo "First Name";	echo "</th>";
 				echo "<th>"; echo "Last Name";  echo "</th>";

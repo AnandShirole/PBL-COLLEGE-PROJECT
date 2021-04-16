@@ -9,13 +9,15 @@
  	<style type="text/css">
  		.wrapper
  		{
- 			width: 300px;
+ 			width: 400px;
+			 height:500px;
  			margin: 0 auto;
  			color: white;
+			 
  		}
  	</style>
  </head>
- <body style="background-color: #004528; ">
+ <body style="background-color: #0000ff; ">
  	<div class="container">
  		<form action="" method="post">
  			<button class="btn btn-default" style="float: right; width: 70px;" name="submit1">Edit</button>
@@ -41,15 +43,15 @@
  				echo "<div style='text-align: center'>
  					<img class='img-circle profile-img' height=110 width=120 src='images/".$_SESSION['pic']."'>
  				</div>";
- 			?>
- 			<div style="text-align: center;"> <b>Welcome, </b>
+ 			?><br>
+ 			<div style="text-align: center; font-size:30px"> <b>Welcome </b>
 	 			<h4>
-	 				<?php echo $_SESSION['login_user']; ?>
+	 				<?php echo $_SESSION['login_user']; ?><br><br>
 	 			</h4>
  			</div>
  			<?php
  				echo "<b>";
- 				echo "<table class='table table-bordered'>";
+ 				echo "<table class='table table-bordered' >";
 	 				echo "<tr>";
 	 					echo "<td>";
 	 						echo "<b> First Name: </b>";

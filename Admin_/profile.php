@@ -12,10 +12,12 @@
  			width: 300px;
  			margin: 0 auto;
  			color: white;
+			 padding:5px;
  		}
  	</style>
+	 
  </head>
- <body style="background-color: #004528; ">
+ <body style= "background-color:#e600e6" >
  	<div class="container">
  		<form action="" method="post">
  			<button class="btn btn-default" style="float: right; width: 70px;" name="submit1" type="submit">Edit</button>
@@ -44,9 +46,9 @@
  					<img class='img-circle profile-img' height=110 width=120 src='images/".$_SESSION['pic']."'>
  				</div>";
  			?>
- 			<div style="text-align: center;"> <b>Welcome, </b>
+ 			<div style="text-align: center; font-size:30px"> <b>Welcome </b><br>
 	 			<h4>
-	 				<?php echo $_SESSION['login_user']; ?>
+	 				<?php echo $_SESSION['login_user']; ?><br><br>
 	 			</h4>
  			</div>
  			<?php

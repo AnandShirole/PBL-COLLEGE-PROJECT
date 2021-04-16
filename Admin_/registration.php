@@ -21,6 +21,8 @@
     {
       margin-top: -20px;
     }
+
+    
   </style>   
 </head>
 <body>
@@ -29,8 +31,8 @@
   <div class="reg_img">
 
     <div class="box2">
-        <h1 style="text-align: center; font-size: 35px;font-family: times new roman;"> &nbsp &nbsp  Library Management System</h1>
-        <h1 style="text-align: center; font-size: 25px;">User Registration Form</h1>
+        <h1 style="text-align: center; font-size: 30px;font-family: times new roman;"> &nbsp   Library Management System</h1>
+        <h1 style="text-align: center; font-size: 25px;">User Registration Form</h1><br>
 
       <form name="Registration" action="" method="post">
         
@@ -42,7 +44,7 @@
           <input class="form-control" type="text" name="email" placeholder="Email" required=""><br>
           <input class="form-control" type="text" name="contact" placeholder="Phone No" required=""><br>
 
-          <input class="btn btn-default" type="submit" name="submit" value="Sign Up" style="color: black; width: 70px; height: 30px"> </div>
+          <input class="btn btn-default" type="submit" name="submit" value="Sign Up" style="color: black; width: 70px; height: 30px;position: center; "> </div>
       </form>
      
     </div>

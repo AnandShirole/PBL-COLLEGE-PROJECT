@@ -2,6 +2,7 @@
   include "connection.php";
   include "navbar.php";
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,13 +22,15 @@
 			height: 40px;
 			background-color: black;
 			color: white;
+      
 		}
 		
 		body {
-			background-image: url("images/aa.jpg");
-			background-repeat: no-repeat;
-  	font-family: "Lato", sans-serif;
+			background-color:#ff6666;
+  	font-family: "times new roman";
   	transition: background-color .5s;
+    
+    
 }
 
 .sidenav {
@@ -38,7 +41,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #222;
+  background-color: #ff6666;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -48,13 +51,13 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: white;
+  color:#ffff00;
 }
 
 .sidenav .closebtn {
@@ -68,6 +71,7 @@
 #main {
   transition: margin-left .5s;
   padding-left: 15px;
+  padding-top:20px;
 }
 
 @media screen and (max-height: 450px) {
@@ -80,19 +84,20 @@
 }
 .h:hover
 {
-	color:white;
+	color:black;
 	width: 300px;
 	height: 50px;
-	background-color: #00544c;
+	background-color: black;
 }
 .container
 {
-	height: 800px;
+	height: 600px;
   width: 85%;
 	background-color: black;
-	opacity: .8;
+	opacity: .7;
 	color: white;
   margin-top: -65px;
+  padding-top:50px;
 }
 .scroll
 {
@@ -149,7 +154,7 @@ th,td
 	function closeNav() {
 	  document.getElementById("mySidenav").style.width = "0";
 	  document.getElementById("main").style.marginLeft= "0";
-	  document.body.style.backgroundColor = "white";
+	  document.body.style.backgroundColor = "#ff6666";
 	}
 	</script>
   <div class="container">

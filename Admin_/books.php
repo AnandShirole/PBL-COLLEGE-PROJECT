@@ -19,7 +19,15 @@
 		body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
+  background-image:url("images/book.jpg");
+  background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    height: 100vh;
+	/*background-color:white;*/
 }
+
+
 
 .sidenav {
   height: 100%;
@@ -39,13 +47,13 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: yellow;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: white;
+  color: black;
 }
 
 .sidenav .closebtn {
@@ -74,7 +82,7 @@
 	color:white;
 	width: 300px;
 	height: 50px;
-	background-color: #00544c;
+	background-color: white;
 }
 
 	</style>
@@ -107,14 +115,14 @@
 
 <div id="main">
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:30px;cursor:pointer; color:black" onclick="openNav()">&#9776; open</span>
 
 
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
   document.getElementById("main").style.marginLeft = "300px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.body.style.backgroundColor = "#00ffff";
 }
 
 function closeNav() {
@@ -129,14 +137,14 @@ function closeNav() {
 		<form class="navbar-form" method="post" name="form1">
 			
 				<input class="form-control" type="text" name="search" placeholder="search books.." required="">
-				<button style="background-color: #6db6b9e6;" type="submit" name="submit" class="btn btn-default">
+				<button style="background-color: #00ccff;" type="submit" name="submit" class="btn btn-default">
 					<span class="glyphicon glyphicon-search"></span>
 				</button>
 		</form>
 		<form class="navbar-form" method="post" name="form1">
 			
 				<input class="form-control" type="text" name="bid" placeholder="Enter Book ID" required="">
-				<button style="background-color: #6db6b9e6;" type="submit" name="submit1" class="btn btn-default">Delete
+				<button style="background-color: #00ccff;" type="submit" name="submit1" class="btn btn-default">Delete
 				</button>
 		</form>
 	</div>
@@ -155,7 +163,7 @@ function closeNav() {
 			else
 			{
 		echo "<table class='table table-bordered table-hover' >";
-			echo "<tr style='background-color: #6db6b9e6;'>";
+			echo "<tr style='background-color: #00ccff;'>";
 				//Table header
 				echo "<th>"; echo "ID";	echo "</th>";
 				echo "<th>"; echo "Book-Name";  echo "</th>";
@@ -188,7 +196,7 @@ function closeNav() {
 			$res=mysqli_query($db,"SELECT * FROM `books` ORDER BY `books`.`name` ASC;");
 
 		echo "<table class='table table-bordered table-hover' >";
-			echo "<tr style='background-color: #6db6b9e6;'>";
+			echo "<tr style='background-color: #00ccff;'>";
 				//Table header
 				echo "<th>"; echo "ID";	echo "</th>";
 				echo "<th>"; echo "Book-Name";  echo "</th>";
@@ -231,11 +239,11 @@ function closeNav() {
 					<script type="text/javascript">
 						alert("Please Login First.");
 					</script>
-				<?
+
+				<?php
 			}
 		}
 		
-
 	?>
 </div>
 </body>

@@ -2,7 +2,6 @@
   include "navbar.php";
   include "connection.php";
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,23 +24,26 @@
     	}
     	.wrapper
     	{
-    		padding: 50px;
-    		margin: -20px auto;
-    		width:900px;
+			margin-top:90px;
+    		padding: 70px;
+    		margin-left:25%;
+    		width:800px;
     		height: 600px;
     		background-color: black;
-    		opacity: .6;
+    		opacity: .9;
     		color: white;
+			padding-top:40px;
     	}
     	.form-control
     	{
     		height: 70px;
     		width: 60%;
+			padding:20px;
     	}
     	.scroll
     	{
     		width: 100%;
-    		height: 300px;
+    		height: 250px;
     		overflow: auto;
     	}
 

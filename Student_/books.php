@@ -2,14 +2,12 @@
   include "connection.php";
   include "navbar.php";
 ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Books</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+ 
 	<style type="text/css">
 		.srch
 		{
@@ -20,11 +18,12 @@
 		body {
   font-family: "Lato", sans-serif;
   transition: background-color .5s;
-  background-image: linear-gradient(to bottom right,rgb(0,0,0,0.7),rgb(0,0,0,0.7)) , url("images/books.jpg");
+  background-image:  url("images/books1.jpg");
   background-repeat: no-repeat;
     			background-size: cover;
     		background-position: center;
 			height:110vh;
+			width:100%;
 }
 
 .sidenav {
@@ -37,22 +36,22 @@
   left: 0;
   background-color: #222;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
   padding-top: 60px;
-  color:white;
+  color:black;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: yellow;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: white;
+  color: black;
 }
 
 .sidenav .closebtn {
@@ -70,7 +69,7 @@
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 20px;}
 }
 .img-circle
 {
@@ -81,7 +80,7 @@
 	color:white;
 	width: 300px;
 	height: 50px;
-	background-color: #00544c;
+	background-color: white;
 }
 
 	</style>
@@ -93,7 +92,7 @@
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-  			<div style="color: white; margin-left: 60px; font-size: 20px;">
+  			<div style="color: white; margin-left: 60px; font-size: 24px;">
 
                 <?php
                 if(isset($_SESSION['login_user']))
@@ -106,16 +105,15 @@
                 ?>
             </div><br><br>
 
- 
   <div class="h"> <a href="books.php">Books</a></div>
   <div class="h"> <a href="request.php">Book Request</a></div>
   <div class="h"> <a href="issue_info.php">Issue Information</a></div>
-  <div class="h"><a href="expired.php">Expired List</a></div>
+
 </div>
 
 <div id="main">
   
-  <span style="font-size:30px;cursor:pointer; color:white" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:30px;cursor:pointer; color:black" onclick="openNav()">&#9776; open</span>
 
 
 <script>
@@ -137,17 +135,18 @@ function closeNav() {
 		<form class="navbar-form" method="post" name="form1">
 			
 				<input class="form-control" type="text" name="search" placeholder="search books.." required="">
-				<button style="background-color: #6db6b9e6;" type="submit" name="submit" class="btn btn-default">
+				<button style="background-color: #00ccff;" type="submit" name="submit" class="btn btn-default">
 					<span class="glyphicon glyphicon-search"></span>
 				</button>
 		</form>
 	</div>
+
 	<!--___________________request book__________________-->
 	<div class="srch">
 		<form class="navbar-form" method="post" name="form1">
 			
 				<input class="form-control" type="text" name="bid" placeholder="Enter Book ID" required="">
-				<button style="background-color: #6db6b9e6;" type="submit" name="submit1" class="btn btn-default">Request
+				<button style="background-color: #00ccff;" type="submit" name="submit1" class="btn btn-default">Request
 				</button>
 		</form>
 	</div>
@@ -167,7 +166,7 @@ function closeNav() {
 			else
 			{
 		echo "<table class='table table-bordered table-hover' >";
-			echo "<tr style='background-color: #6db6b9e6;'>";
+			echo "<tr style='background-color: #00ccff;'>";
 				//Table header
 				echo "<th>"; echo "ID";	echo "</th>";
 				echo "<th>"; echo "Book-Name";  echo "</th>";
@@ -200,7 +199,7 @@ function closeNav() {
 			$res=mysqli_query($db,"SELECT * FROM `books` ORDER BY `books`.`name` ASC;");
 
 		echo "<table class='table table-bordered table-hover' >";
-			echo "<tr style='background-color: #6db6b9e6;'>";
+			echo "<tr style='background-color: #00ccff;'>";
 				//Table header
 				echo "<th>"; echo "ID";	echo "</th>";
 				echo "<th>"; echo "Book-Name";  echo "</th>";

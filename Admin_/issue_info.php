@@ -24,7 +24,7 @@
 		}
 		
 		body {
-			background-image: url("images/aa.jpg");
+			background-color:#33ccff;
 			background-repeat: no-repeat;
   	font-family: "Lato", sans-serif;
   	transition: background-color .5s;
@@ -38,7 +38,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #222;
+  background-color: #33ccff;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -48,13 +48,13 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: white;
+  color: #33ccff;
 }
 
 .sidenav .closebtn {
@@ -83,14 +83,15 @@
 	color:white;
 	width: 300px;
 	height: 50px;
-	background-color: #00544c;
+	background-color:black;
 }
 .container
 {
-	height: 600px;
+	height: 500px;
 	background-color: black;
 	opacity: .8;
 	color: white;
+  width:80%;
 }
 .scroll
 {
@@ -147,7 +148,7 @@ th,td
 	function closeNav() {
 	  document.getElementById("mySidenav").style.width = "0";
 	  document.getElementById("main").style.marginLeft= "0";
-	  document.body.style.backgroundColor = "white";
+	  document.body.style.backgroundColor = "#33ccff";
 	}
 	</script>
   <div class="container">
@@ -164,7 +165,7 @@ th,td
         echo "<table class='table table-bordered' style='width:100%;' >";
         //Table header
         
-        echo "<tr style='background-color: #6db6b9e6;'>";
+        echo "<tr style='background-color: red;'>";
         echo "<th>"; echo "Username";  echo "</th>";
         echo "<th>"; echo "Roll No";  echo "</th>";
         echo "<th>"; echo "BID";  echo "</th>";

@@ -24,9 +24,9 @@
 		}
 		
 		body {
-			background-image: url("images/1111.jpg");
+			background-color:#cc99ff;
 			background-repeat: no-repeat;
-  	font-family: "Lato", sans-serif;
+  	font-family: "times new roman";
   	transition: background-color .5s;
 }
 
@@ -38,7 +38,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #222;
+  background-color: #cc99ff;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -48,7 +48,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -137,7 +137,7 @@
 	function closeNav() {
 	  document.getElementById("mySidenav").style.width = "0";
 	  document.getElementById("main").style.marginLeft= "0";
-	  document.body.style.backgroundColor = "white";
+	  document.body.style.backgroundColor = "#cc99ff";
 	}
 	</script>
 	<br>

@@ -20,20 +20,13 @@
 	    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand active"> LIBRARY MANAGEMENT SYSTEM</a>
+            <a class="navbar-brand active">ONLINE LIBRARY MANAGEMENT SYSTEM</a>
           </div>
           <ul class="nav navbar-nav">
             <li><a href="index.php">HOME</a></li>
             <li><a href="books.php">BOOKS</a></li>
             <li><a href="feedback.php">FEEDBACK</a></li>
           </ul>
-          <style>
-          nav ul li a:hover{
-                      color:red;
-                      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-                    background-color: yellow;
-          </style>
-}
           <?php
             if(isset($_SESSION['login_user']))
             {
@@ -71,14 +64,13 @@
 
       </div>
     </nav>
-
-
     <?php
-      if(isset($_SESSION['login_user']))
+      if(isset($_POST['login_user']))
       {
         $day=0;
+
         $exp='<p style="color:yellow; background-color:red;">EXPIRED</p>';
-        $res= mysqli_query($db, "SELECT * FROM `issue_book` where username ='$_SESSION[login_user]' and approve ='$exp' ;");
+        $res= mysqli_query($db,"SELECT * FROM `issue_book` where username ='$_SESSION[login_user]' and approve ='$exp' ;");
       
       while($row=mysqli_fetch_assoc($res))
       {

@@ -7,7 +7,7 @@
 <html>
 <head>
 
-  <title>Student Login</title>
+  <title>admin Login</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,20 +25,20 @@
   <div class="log_img">
    <br>
     <div class="box1">
-        <h1 style="text-align: center; font-size: 30px;font-family: times new roman;">Library Management System</h1><br><br>
-        <h1 style="text-align: center; font-size: 25px;">User Login Form</h1><br>
+        <h1 style="text-align: center; font-size: 30px;font-family: times new roman;">Library Management System</h1><br>
+        <h1 style="text-align: center; font-size: 23px;"> Login Form</h1><br>
       <form  name="login" action="" method="post">
         
         <div class="login">
           <input class="form-control" type="text" name="username" placeholder="Username" required=""> <br>
           <input class="form-control" type="password" name="password" placeholder="Password" required=""> <br>
-          <input class="btn btn-default" type="submit" name="submit" value="Login" style="color: black; width: 70px; height: 30px"> 
+          <input class="btn btn-deAfault" type="submit" name="submit" value="Login" style="color: black; width: 70px; height: 30px; position:center"> 
         </div>
       
       <p style="color: white; padding-left: 15px;">
         <br><br>
-        <a style="color:yellow;text-decoration: none;" href="update_password.php">Forgot password?</a> &nbsp &nbsp &nbsp &nbsp &nbsp  
-        New to this website?<a style="color: yellow; text-decoration: none;" href="registration.php">&nbspSign Up</a>
+        <a style="color:black;text-decoration: none;" href="update_password.php">Forgot password?</a> &nbsp &nbsp &nbsp &nbsp
+        <a style="color: black; text-decoration: none;" href="registration.php">&nbsp Sign Up</a>
       </p>
     </form>
     </div>

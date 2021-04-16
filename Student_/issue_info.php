@@ -24,10 +24,14 @@
     }
     
     body {
-      background-image: url("images/aa.jpg");
+      background-image: url("images/info.jpg");
       background-repeat: no-repeat;
-    font-family: "Lato", sans-serif;
+    font-family: "times new roman";
     transition: background-color .5s;
+    background-size: cover;
+    		background-position: center;
+			height:110vh;
+			width:100%;
 }
 
 .sidenav {
@@ -129,12 +133,11 @@ th,td
   <div class="h"> <a href="books.php">Books</a></div>
   <div class="h"> <a href="request.php">Book Request</a></div>
   <div class="h"> <a href="issue_info.php">Issue Information</a></div>
-  <div class="h"><a href="expired.php">Expired List</a></div>
 </div>
 
 <div id="main">
   
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:40px;cursor:pointer;color:white" onclick="openNav()">&#9776; open</span>
 
 
   <script>

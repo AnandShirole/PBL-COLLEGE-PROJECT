@@ -17,9 +17,13 @@
 		}
 		
 		body {
-  background-color: #024629;
-  font-family: "Lato", sans-serif;
+  background-image:url("images/add.jpg");
+  font-family: "times new roman";
   transition: background-color .5s;
+  background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    height: 100vh;
 }
 
 .sidenav {
@@ -40,13 +44,13 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: yellow;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: white;
+  color: black;
 }
 
 .sidenav .closebtn {
@@ -75,7 +79,7 @@
 	color:white;
 	width: 300px;
 	height: 50px;
-	background-color: #00544c;
+	background-color: white;
 }
 
 .book
@@ -85,9 +89,9 @@
 }
 .form-control
 {
-  background-color: #080707;
+  background-color: black;
   color: white;
-  height: 40px;
+  height: 45px;
 }
 
 	</style>
@@ -100,7 +104,7 @@
 	<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-  			<div style="color: white; margin-left: 60px; font-size: 20px;">
+  			<div style="color: white; margin-left: 60px; font-size: 30px;">
 
                 <?php
                 if(isset($_SESSION['login_user']))
@@ -114,15 +118,14 @@
             </div><br><br>
 
  <div class="h"> <a href="add.php">Add Books</a> </div> 
-  <div class="h"> <a href="delete.php">Delete Books</a></div>
   <div class="h"> <a href="request.php">Book Request</a></div>
   <div class="h"> <a href="issue_info.php">Issue Information</a></div>
 </div>
 
 <div id="main">
-  <span style="font-size:30px;cursor:pointer; color: black;" onclick="openNav()">&#9776; open</span>
+  <span style="font-size:35px;cursor:pointer; color: black" onclick="openNav()">&#9776; open</span>
   <div class="container" style="text-align: center;">
-    <h2 style="color:black; font-family: Lucida Console; text-align: center"><b>Add New Books</b></h2>
+    <h2 style="color:black; font-family: times new roman; text-align: center"><b>Add New Books</b></h2>
     
     <form class="book" action="" method="post">
         
@@ -137,6 +140,7 @@
         <button style="text-align: center;" class="btn btn-default" type="submit" name="submit">ADD</button>
     </form>
   </div>
+
 <?php
     if(isset($_POST['submit']))
     {
@@ -162,17 +166,18 @@
     }
 ?>
 </div>
+
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
   document.getElementById("main").style.marginLeft = "300px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.body.style.backgroundColor = "red";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "#024629";
+  document.body.style.backgroundColor = "white";
 }
 </script>
 
