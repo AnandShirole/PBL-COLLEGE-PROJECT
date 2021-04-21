@@ -66,11 +66,7 @@
       if($count==0)
       {
         ?>
-              <!--
-              <script type="text/javascript">
-                alert("The username and password doesn't match.");
-              </script> 
-              -->
+            
           <div class="alert alert-danger" style="width: 600px; margin-left: 370px; background-color: #de1313; color: white">
             <strong>The username and password doesn't match</strong>
           </div>    

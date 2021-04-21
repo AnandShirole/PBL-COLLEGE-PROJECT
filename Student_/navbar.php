@@ -64,6 +64,7 @@
 
       </div>
     </nav>
+    
     <?php
       if(isset($_POST['login_user']))
       {

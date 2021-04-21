@@ -92,12 +92,11 @@ body {
 			$first=$_POST['first'];
 			$last=$_POST['last'];
 			$username=$_POST['username'];
-			
 			$email=$_POST['email'];
 			$contact=$_POST['contact'];
 			$pic=$_FILES['file']['name'];
 
-			$sql1= "UPDATE admin SET pic='$pic', first='$first', last='$last', username='$username',  email='$email', contact='$contact' WHERE username='".$_SESSION['login_user']."';";
+			$sql1= "UPDATE adminn SET pic='$pic', first='$first', last='$last', username='$username',  email='$email', contact='$contact' WHERE username='".$_SESSION['login_user']."';";
 
 			if(mysqli_query($db,$sql1))
 			{
