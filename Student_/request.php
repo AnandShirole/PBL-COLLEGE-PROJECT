@@ -138,12 +138,7 @@
 
 			if(mysqli_num_rows($q)==0)
 			{
-				
-				
 				echo ' <span style="font-size:1.2;color:#0e3c68;font-weight:bold;">"There is no pending request"</span></div>';
-
-				
-			
 			}
 
 			else

@@ -83,7 +83,7 @@
 	background-color: white;
 }
 
-	</style>
+</style>
 
 </head>
 <body>
@@ -129,6 +129,8 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 </script>
+
+
 	<!--___________________search bar________________________-->
 
 	<div class="srch">

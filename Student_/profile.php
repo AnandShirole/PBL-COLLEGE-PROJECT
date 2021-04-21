@@ -15,9 +15,22 @@
  			color: white;
 			 
  		}
+		 
  	</style>
+	 <style>
+	 	
+		 body {
+			background-image: url("images/prof.jpg");
+			background-repeat: no-repeat;
+  	font-family: "Lato", sans-serif;
+  	transition: background-color .5s;
+	  width:100%;
+	  height:110vh;
+}
+</style>
+
  </head>
- <body style="background-color: #0000ff; ">
+ <body >
  	<div class="container">
  		<form action="" method="post">
  			<button class="btn btn-default" style="float: right; width: 70px;" name="submit1">Edit</button>
@@ -80,14 +93,7 @@
 	 					echo "</td>";
 	 				echo "</tr>";
 
-	 				echo "<tr>";
-	 					echo "<td>";
-	 						echo "<b> Password: </b>";
-	 					echo "</td>";
-	 					echo "<td>";
-	 						echo $row['password'];
-	 					echo "</td>";
-	 				echo "</tr>";
+	 				
 
 	 				echo "<tr>";
 	 					echo "<td>";

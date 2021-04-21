@@ -57,19 +57,20 @@
 	
 	<?php
 
-		if(isset($_POST['submit']))
-		{
-			if(mysqli_query($db,"UPDATE admin SET password='$_POST[password]' WHERE username='$_POST[username]'
-			AND email='$_POST[email]' ;"))
-			{
-				?>
-					<script type="text/javascript">
-                alert("The Password Updated Successfully.");
-              </script> 
+if(isset($_POST['submit']))
+{
+	if(mysqli_query($db,"UPDATE student SET password='$_POST[password]' WHERE username='$_POST[username]'
+	AND email='$_POST[email]' ;"))
+	{
+		?>
+			<script type="text/javascript">
+		alert("The Password Updated Successfully.");
+	  </script> 
 
-				<?php
-			}
-		}
+		<?php
+	}
+	
+}
 	?></div>
 </body>
 </html>

@@ -41,7 +41,7 @@
           <input class="form-control" type="text" name="last" placeholder="Last Name" required=""> <br>
           <input class="form-control" type="text" name="username" placeholder="Username" required=""> <br>
           <input class="form-control" type="password" name="password" placeholder="Password" required=""> <br>
-          <input class="form-control" type="text" name="email" placeholder="Email" required=""><br>
+          <input class="form-control" type="email" name="email" placeholder="Email" required=""><br>
           <input class="form-control" type="text" name="contact" placeholder="Phone No" required=""><br>
 
           <input class="btn btn-default" type="submit" name="submit" value="Sign Up" style="color: black; width: 70px; height: 30px;position: center; "> </div>
@@ -56,7 +56,11 @@
       if(isset($_POST['submit']))
       {
         $count=0;
-        $sql="SELECT username from `admin`";
+        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $password=$_POST['password'];
+        $password = md5($password);
+        
+        $sql="SELECT username from `adminn`";
         $res=mysqli_query($db,$sql);
 
         while($row=mysqli_fetch_assoc($res))
@@ -68,7 +72,7 @@
         }
         if($count==0)
         {
-          mysqli_query($db,"INSERT INTO `admin` VALUES('', '$_POST[first]', '$_POST[last]', '$_POST[username]', '$_POST[password]', '$_POST[email]', '$_POST[contact]', 'p.jpg');");
+          mysqli_query($db,"INSERT INTO `adminn` VALUES('', '$_POST[first]', '$_POST[last]', '$_POST[username]', '$password', '$_POST[email]', '$_POST[contact]', 'p.jpg');");
         ?>
           <script type="text/javascript">
            alert("Registration successful");

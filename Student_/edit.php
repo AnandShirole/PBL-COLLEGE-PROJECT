@@ -11,6 +11,7 @@
 		{
 			width:250px;
 			height: 38px;
+			
 		}
 		.form1
 		{
@@ -71,8 +72,7 @@ body {
 		<label><h4><b>Username</b></h4></label>
 		<input class="form-control" type="text" name="username" value="<?php echo $username; ?>">
 
-		<label><h4><b>Password</b></h4></label>
-		<input class="form-control" type="text" name="password" value="<?php echo $password; ?>">
+		
 
 		<label><h4><b>Email</b></h4></label>
 		<input class="form-control" type="text" name="email" value="<?php echo $email; ?>">
@@ -94,12 +94,11 @@ body {
 			$first=$_POST['first'];
 			$last=$_POST['last'];
 			$username=$_POST['username'];
-			$password=$_POST['password'];
 			$email=$_POST['email'];
 			$contact=$_POST['contact'];
 			$pic=$_FILES['file']['name'];
 
-			$sql1= "UPDATE student SET pic='$pic', first='$first', last='$last', username='$username', password='$password', email='$email', contact='$contact' WHERE username='".$_SESSION['login_user']."';";
+			$sql1= "UPDATE student SET pic='$pic', first='$first', last='$last', username='$username',  email='$email', contact='$contact' WHERE username='".$_SESSION['login_user']."';";
 
 			if(mysqli_query($db,$sql1))
 			{

@@ -38,7 +38,7 @@ body {
 	<h2 style="text-align: center;color: #fff;">Edit Information</h2>
 	<?php
 		
-		$sql = "SELECT * FROM admin WHERE username='$_SESSION[login_user]'";
+		$sql = "SELECT * FROM adminn WHERE username='$_SESSION[login_user]'";
 		$result = mysqli_query($db,$sql) or die (mysql_error());
 
 		while ($row = mysqli_fetch_assoc($result)) 
@@ -46,7 +46,6 @@ body {
 			$first=$row['first'];
 			$last=$row['last'];
 			$username=$row['username'];
-			$password=$row['password'];
 			$email=$row['email'];
 			$contact=$row['contact'];
 		}
@@ -72,8 +71,6 @@ body {
 		<label><h4><b>Username</b></h4></label>
 		<input class="form-control" type="text" name="username" value="<?php echo $username; ?>">
 
-		<label><h4><b>Password</b></h4></label>
-		<input class="form-control" type="text" name="password" value="<?php echo $password; ?>">
 
 		<label><h4><b>Email</b></h4></label>
 		<input class="form-control" type="text" name="email" value="<?php echo $email; ?>">
@@ -95,12 +92,12 @@ body {
 			$first=$_POST['first'];
 			$last=$_POST['last'];
 			$username=$_POST['username'];
-			$password=$_POST['password'];
+			
 			$email=$_POST['email'];
 			$contact=$_POST['contact'];
 			$pic=$_FILES['file']['name'];
 
-			$sql1= "UPDATE admin SET pic='$pic', first='$first', last='$last', username='$username', password='$password', email='$email', contact='$contact' WHERE username='".$_SESSION['login_user']."';";
+			$sql1= "UPDATE admin SET pic='$pic', first='$first', last='$last', username='$username',  email='$email', contact='$contact' WHERE username='".$_SESSION['login_user']."';";
 
 			if(mysqli_query($db,$sql1))
 			{

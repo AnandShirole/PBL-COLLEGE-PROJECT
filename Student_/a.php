@@ -1,6 +1,8 @@
 <?php
   include "connection.php";
  
+
+  
 	$count=0;
       $res=mysqli_query($db,"SELECT * FROM `student` WHERE username='c' AND password='d';");
       $count=mysqli_num_rows($res);

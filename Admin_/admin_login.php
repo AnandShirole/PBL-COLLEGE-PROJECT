@@ -50,8 +50,11 @@
     if(isset($_POST['submit']))
     {
       $count=0;
-      $res=mysqli_query($db,"SELECT * FROM `admin` WHERE username='$_POST[username]' && password='$_POST[password]';");
-
+      $username = mysqli_real_escape_string($db, $_POST['username']);
+      $password=$_POST['password'];
+      $password = md5($password);
+      $sql = "SELECT * FROM adminn WHERE username='$username' && password='$password'";
+      $res = $db->query($sql);
       $row= mysqli_fetch_assoc($res);
 
       $count=mysqli_num_rows($res);

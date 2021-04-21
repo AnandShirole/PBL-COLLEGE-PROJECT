@@ -35,7 +35,7 @@
  			}
 
 
- 				$q=mysqli_query($db,"SELECT * FROM admin where username='$_SESSION[login_user]' ;");
+ 				$q=mysqli_query($db,"SELECT * FROM adminn where username='$_SESSION[login_user]' ;");
  			?>
  			<h2 style="text-align: center;">My Profile</h2>
 
@@ -82,15 +82,7 @@
 	 					echo "</td>";
 	 				echo "</tr>";
 
-	 				echo "<tr>";
-	 					echo "<td>";
-	 						echo "<b> Password: </b>";
-	 					echo "</td>";
-	 					echo "<td>";
-	 						echo $row['password'];
-	 					echo "</td>";
-	 				echo "</tr>";
-
+	 				
 	 				echo "<tr>";
 	 					echo "<td>";
 	 						echo "<b> Email: </b>";	
